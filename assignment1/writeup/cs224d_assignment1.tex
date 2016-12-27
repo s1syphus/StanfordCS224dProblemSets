@@ -1,0 +1,42 @@
+\documentclass{article}
+
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\title{CS 224d Problem Set \#1}
+\author{Robert Micatka}
+
+\maketitle
+
+\section{Problem 1 - Softmax}
+
+\begin{enumerate}[label=(\alph*)]
+
+\item Softmax is Invariant to Constant Offset
+	$softmax(x) = softmax(x + c) \\
+	softmax(x) = \frac{e^{x_i}}{\sum_j e^{x_i}} \\
+	softmax(x + c) = \frac{e^{x_i + c}}{\sum_j e^{x_i + c}} = 
+	\frac{e^{x_i} e^{c}}{\sum_j e^{x_i} e^{c}} = 
+	\frac{e^{x_i} e^{c}}{e^{c} \sum_j {e^{x_i}}} = \frac{e^{x_i}}{\sum_j e^{x_i}} \blacksquare
+	$
+	
+\item Code is in directory
+
+\end{enumerate}
+
+\section{Problem 2 - Neural Network Basics}
+
+\begin{enumerate}[label=(\alph*)]
+
+\item 
+
+\end{enumerate}
+
+\section{Problem 3 - Word2Vec}
+
+\section{Problem 4 - Sentiment Analysis}
+
+\end{document}
